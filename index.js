@@ -18,6 +18,8 @@ app.post('/test', (req, res) => {
     try {
         const body = req.body;
         console.log(body);
+        console.log('-----------------------------------');
+        console.log(body.payment.products);
         res.sendStatus(200);
     } catch (e) {
         console.error(e.messgae);
