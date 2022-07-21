@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/test', (req, res) => {
+    console.log('test');
     try {
         const body = req.body;
         console.log(body);
