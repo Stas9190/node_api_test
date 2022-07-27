@@ -19,7 +19,7 @@ app.post('/test', (req, res) => {
         const body = req.body;
         console.log(body);
         console.log('-----------------------------------');
-        res.status(200).send('Фискализация прошла успешно');
+        res.status(401).send('Anaothorized');
     } catch (e) {
         console.error(e.messgae);
     }
