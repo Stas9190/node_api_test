@@ -19,7 +19,7 @@ app.post('/test', (req, res) => {
         const body = req.body;
         console.log(body);
         console.log('-----------------------------------');
-        res.status(404).send('page not found');
+        res.status(200).send('Фискализация прошла успешно');
     } catch (e) {
         console.error(e.messgae);
     }
