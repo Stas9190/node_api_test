@@ -19,7 +19,7 @@ app.post('/test', (req, res) => {
         const body = req.body;
         console.log(body);
         console.log('-----------------------------------');
-        res.status(401).send('Anaothorized');
+        res.status(200).send('Ok');
     } catch (e) {
         console.error(e.messgae);
     }
