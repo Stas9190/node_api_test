@@ -19,7 +19,10 @@ app.post('/test', (req, res) => {
         const body = req.body;
         console.log(body);
         console.log('-----------------------------------');
-        res.status(200).send('Ok');
+        res.status(500).send({
+            message: "Произошла ошибка на сервере",
+            errors: " must have required property 'Email'"
+        });
     } catch (e) {
         console.error(e.messgae);
     }
